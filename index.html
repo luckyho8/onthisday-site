@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>옛날 오늘 작업판</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--bg:#fbf8ff;--card:#fff;--ink:#3b3355;--sub:#7a7392;--line:#ece6f5;--accent:#7b61ff;--mint:#d7f5ea;--peach:#ffe3d1;--done:#e9f8ef}
+@media (prefers-color-scheme:dark){:root{--bg:#17151f;--card:#211e2c;--ink:#ece8ff;--sub:#a59fbd;--line:#332e44;--accent:#a593ff;--mint:#1f3a33;--peach:#3d2c25;--done:#1c3326}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Pretendard,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;line-height:1.55}
+.wrap{max-width:980px;margin:0 auto;padding:16px}
+.top{display:flex;align-items:center;gap:12px;margin:8px 0 14px}.top img{width:44px;height:44px;border-radius:50%}
+.top h1{font-size:20px;margin:0}.top p{margin:0;color:var(--sub);font-size:13px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;position:sticky;top:0;background:var(--bg);z-index:5}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 14px;font:inherit;font-size:14px;white-space:nowrap;cursor:pointer}
+.tab.on{background:var(--accent);color:#fff;border-color:var(--accent)}.tab small{opacity:.75;margin-left:4px}
+.day{display:none}.day.on{display:block}
+.post{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin:14px 0}
+.post.done{background:linear-gradient(0deg,var(--card),var(--card)) padding-box;border-color:#bfe8cf}
+.post header{display:flex;gap:12px;align-items:flex-start}
+.badge{background:var(--mint);border-radius:12px;padding:6px 10px;font-weight:700;font-size:14px}
+.meta{flex:1;min-width:0}.meta h2{font-size:16px;margin:0 0 2px;line-height:1.4}.yr{display:inline-block;background:var(--peach);border-radius:6px;padding:0 6px;margin-right:6px;font-size:13px}
+.topic{font-size:13px;color:var(--sub);margin:8px 0 0}.meta p{margin:0;color:var(--sub);font-size:13px}
+.status{font-size:13px;white-space:nowrap}
+.thumbs{display:flex;gap:8px;overflow-x:auto;margin:12px 0 4px;padding-bottom:4px}
+.th{position:relative;flex:0 0 auto}.th img{width:96px;border-radius:10px;display:block;border:1px solid var(--line)}
+.th.reel img{width:72px}.th span{position:absolute;left:4px;top:4px;background:rgba(0,0,0,.55);color:#fff;font-size:11px;border-radius:6px;padding:0 5px}
+details{margin:8px 0}summary{cursor:pointer;color:var(--sub);font-size:14px}
+.cards ol{margin:8px 0;padding-left:0;list-style:none}.cards li{font-size:14px;margin:4px 0}.cards li b{display:inline-block;width:20px;color:var(--accent)}
+.hook{font-size:13px;color:var(--sub);margin:4px 0}
+.files{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
+.file{border-radius:10px;padding:8px 12px;font-size:14px;text-decoration:none;background:var(--peach);color:var(--ink)}
+.file.off{opacity:.55;font-size:13px}
+.music{font-size:13px;color:var(--sub);margin:6px 0 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+@media (max-width:720px){.grid{grid-template-columns:1fr}}
+h3{font-size:14px;margin:10px 0 6px}
+.copy{border:1px solid var(--line);border-radius:12px;margin:8px 0;overflow:hidden}
+.copy-head{display:flex;align-items:center;gap:8px;padding:8px 10px;background:var(--bg);font-size:13px;font-weight:600}
+.copy-head small{font-weight:400;color:var(--sub)}.copy-head span{flex:0 1 auto}
+.btn-copy{margin-left:auto;border:0;background:var(--accent);color:#fff;border-radius:8px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer;min-width:64px}
+.btn-copy.ok{background:#2fa36b}
+pre{margin:0;padding:10px;white-space:pre-wrap;word-break:keep-all;font:inherit;font-size:13.5px;max-height:220px;overflow:auto}
+.check{margin:6px 0 0;padding-left:18px;font-size:13px;color:var(--sub)}
+.foot{color:var(--sub);font-size:12px;text-align:center;margin:24px 0}
+</style></head>
+<body><div class="wrap">
+  <div class="top"><img src="img/profile.jpg" alt=""><div><h1>옛날 오늘 작업판</h1>
+    <p>@yetnal.oneul · 날짜를 고르고, 캡션은 복사 버튼으로</p></div></div>
+  <nav class="tabs"><button class="tab on" data-day="d2026-11-05">11/5(목)<small>3/3</small></button></nav>
+  <div class="day on" id="d2026-11-05">
+    <section class="post done" id="2026-11-05-1">
+      <header>
+        <div class="badge">1번</div>
+        <div class="meta">
+          <h2><span class="yr">1945</span>조남철 선생이 한성기원을 세웠다</h2>
+          <p>2026-11-05 오후 (카드뉴스 + 릴스 동시) · 기념일 탄생</p>
+        </div>
+        <div class="status">✅ 게시 완료</div>
+      </header>
+      <div class="thumbs"><a href="img/2026-11-05-1/card1.jpg" target="_blank" class="th"><img src="img/2026-11-05-1/card1.jpg" alt="" loading="lazy"><span>1</span></a><a href="img/2026-11-05-1/card2.jpg" target="_blank" class="th"><img src="img/2026-11-05-1/card2.jpg" alt="" loading="lazy"><span>2</span></a><a href="img/2026-11-05-1/card3.jpg" target="_blank" class="th"><img src="img/2026-11-05-1/card3.jpg" alt="" loading="lazy"><span>3</span></a><a href="img/2026-11-05-1/card4.jpg" target="_blank" class="th"><img src="img/2026-11-05-1/card4.jpg" alt="" loading="lazy"><span>4</span></a><a href="img/2026-11-05-1/card5.jpg" target="_blank" class="th"><img src="img/2026-11-05-1/card5.jpg" alt="" loading="lazy"><span>5</span></a><a href="img/2026-11-05-1/reel.jpg" target="_blank" class="th reel"><img src="img/2026-11-05-1/reel.jpg" alt="" loading="lazy"><span>릴스</span></a></div>
+      <details class="cards"><summary>주제·카드 문구 보기</summary><p class="topic">1945년 11월 5일, 조남철 선생이 한성기원(현 한국기원)을 세웠다. 그래서 11월 5일은 &#x27;바둑의 날&#x27;이다.</p><ol><li><b>1</b> 오늘은 바둑의 날</li><li><b>2</b> 1945년 11월 5일, 조남철 선생이 &#x27;한성기원&#x27;을 세웠어요. 지금의 한국기원이 바로 여기서 시작됐답니다.</li><li><b>3</b> 가로세로 19줄, 361개의 점 위에서 두는 게임이에요. 나올 수 있는 판의 수는 우주의 원자 수보다 많대요!</li><li><b>4</b> 오늘 저녁엔 오목 말고 바둑 한 판, 어때요?</li><li><b>5</b> 내일도 보려면 저장!</li></ol>
+        <p class="hook">릴스 첫 장면: “11월 5일이 바둑 생일인 이유”</p></details>
+      <div class="files"><span class="file off" title="images/2026-11-05-1/final/">카드 이미지 5장 · 드라이브 업로드 전</span><span class="file off" title="reels/2026-11-05-1.mp4">릴스 (음원 포함) · 드라이브 업로드 전</span></div>
+      <p class="music">🎵 기본 음원: easy-lemon</p>
+      <div class="grid">
+        <div>
+          <h3>카드뉴스</h3>
+          
+      <div class="copy">
+        <div class="copy-head"><span>카드뉴스 캡션</span><small>🎵 표기 없음</small>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>1945년 11월 5일, 조남철 선생이 지금의 한국기원의 시작인 한성기원을 세웠어요. 그래서 매년 11월 5일은 &#x27;바둑의 날&#x27;로 기념하고 있답니다. 오늘만큼은 오목 대신 바둑 한 판, 어떠세요? ⚫⚪
+
+On November 5, 1945, Cho Nam-chul founded Hanseong Giwon, the forerunner of the Korea Baduk Association, which is why today is Korea&#x27;s Baduk Day.
+
+#옛날오늘 #오늘은무슨날 #바둑의날 #바둑 #한국기원 #11월5일 #오늘의역사 #카드뉴스 #BadukDay #OnThisDay</pre>
+      </div>
+          <ul class="check">
+            <li>card1~5 <b>순서대로</b> 선택 → 자르기 <b>4:5</b></li>
+            <li>고급 설정: <b>AI 레이블 켜기</b>, Facebook·Threads 공유 <b>끄기</b></li>
+          </ul>
+        </div>
+        <div>
+          <h3>릴스</h3>
+          
+      <div class="copy">
+        <div class="copy-head"><span>릴스 캡션</span><small>🎵 표기 포함</small>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>1945년 11월 5일, 조남철 선생이 지금의 한국기원의 시작인 한성기원을 세웠어요. 그래서 매년 11월 5일은 &#x27;바둑의 날&#x27;로 기념하고 있답니다. 오늘만큼은 오목 대신 바둑 한 판, 어떠세요? ⚫⚪
+
+On November 5, 1945, Cho Nam-chul founded Hanseong Giwon, the forerunner of the Korea Baduk Association, which is why today is Korea&#x27;s Baduk Day.
+
+#옛날오늘 #오늘은무슨날 #바둑의날 #바둑 #한국기원 #11월5일 #오늘의역사 #카드뉴스 #BadukDay #OnThisDay
+
+🎵 &quot;Easy Lemon&quot; - Kevin MacLeod (incompetech.com) / CC BY 4.0 creativecommons.org/licenses/by/4.0</pre>
+      </div>
+          <ul class="check">
+            <li>비율 <b>원본</b>, 커버는 첫 장면</li>
+            <li>AI 레이블 켜기</li>
+          </ul>
+        </div>
+      </div>
+      <details class="alts"><summary>대체 텍스트 (카드 5장 + 릴스)</summary>
+        
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 전체</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>1. 바둑판 위에 흑돌과 백돌이 놓여 있고 옆에 풍선과 고깔모자가 있는 파스텔 일러스트. 제목은 &quot;오늘은 바둑의 날&quot;.
+2. 한복을 입은 남성이 낮은 나무 상 위 바둑판에 돌을 놓는 일러스트. 1945년 11월 5일 조남철 선생이 한성기원을 세웠다는 설명.
+3. 보랏빛 우주 구름 위에 떠 있는 바둑판 일러스트. 바둑에서 나올 수 있는 판의 수가 우주의 원자 수보다 많다는 설명.
+4. 웃는 얼굴의 흑돌, 백돌 캐릭터와 코코아 머그컵 일러스트. &quot;오늘 저녁엔 오목 말고 바둑 한 판, 어때요?&quot;
+5. 1장과 같은 바둑판 일러스트에 &quot;내일도 보려면 저장!&quot; 문구.</pre>
+      </div>
+        
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 1</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>바둑판 위에 흑돌과 백돌이 놓여 있고 옆에 풍선과 고깔모자가 있는 파스텔 일러스트. 제목은 &quot;오늘은 바둑의 날&quot;.</pre>
+      </div>
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 2</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>한복을 입은 남성이 낮은 나무 상 위 바둑판에 돌을 놓는 일러스트. 1945년 11월 5일 조남철 선생이 한성기원을 세웠다는 설명.</pre>
+      </div>
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 3</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>보랏빛 우주 구름 위에 떠 있는 바둑판 일러스트. 바둑에서 나올 수 있는 판의 수가 우주의 원자 수보다 많다는 설명.</pre>
+      </div>
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 4</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>웃는 얼굴의 흑돌, 백돌 캐릭터와 코코아 머그컵 일러스트. &quot;오늘 저녁엔 오목 말고 바둑 한 판, 어때요?&quot;</pre>
+      </div>
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 5</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>1장과 같은 바둑판 일러스트에 &quot;내일도 보려면 저장!&quot; 문구.</pre>
+      </div>
+        
+      <div class="copy">
+        <div class="copy-head"><span>릴스 대체 텍스트</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>옛날 오늘 릴스. 파스텔 일러스트 카드 5장이 차례로 넘어가는 영상, 첫 장면 문구는 &quot;11월 5일이 바둑 생일인 이유&quot;.</pre>
+      </div>
+      </details>
+    </section>
+    <section class="post done" id="2026-11-05-2">
+      <header>
+        <div class="badge">2번</div>
+        <div class="meta">
+          <h2><span class="yr">1986</span>가수 보아 탄생</h2>
+          <p>2026-11-05 18:30 KST (슬롯 3) · 유명인 탄생</p>
+        </div>
+        <div class="status">✅ 게시 완료</div>
+      </header>
+      <div class="thumbs"><a href="img/2026-11-05-2/card1.jpg" target="_blank" class="th"><img src="img/2026-11-05-2/card1.jpg" alt="" loading="lazy"><span>1</span></a><a href="img/2026-11-05-2/card2.jpg" target="_blank" class="th"><img src="img/2026-11-05-2/card2.jpg" alt="" loading="lazy"><span>2</span></a><a href="img/2026-11-05-2/card3.jpg" target="_blank" class="th"><img src="img/2026-11-05-2/card3.jpg" alt="" loading="lazy"><span>3</span></a><a href="img/2026-11-05-2/card4.jpg" target="_blank" class="th"><img src="img/2026-11-05-2/card4.jpg" alt="" loading="lazy"><span>4</span></a><a href="img/2026-11-05-2/card5.jpg" target="_blank" class="th"><img src="img/2026-11-05-2/card5.jpg" alt="" loading="lazy"><span>5</span></a><a href="img/2026-11-05-2/reel.jpg" target="_blank" class="th reel"><img src="img/2026-11-05-2/reel.jpg" alt="" loading="lazy"><span>릴스</span></a></div>
+      <details class="cards"><summary>주제·카드 문구 보기</summary><p class="topic">1986년 11월 5일, 가수 보아(권보아) 탄생. 2000년 만 13세 데뷔, 2002년 일본 첫 앨범으로 한국 가수 최초 오리콘 앨범 차트 1위</p><ol><li><b>1</b> 만 13살 데뷔, 오늘의 생일자는?</li><li><b>2</b> 1986년 11월 5일, 가수 보아가 태어났어요. 2000년 만 13세에 &#x27;ID; Peace B&#x27;로 데뷔했죠.</li><li><b>3</b> 2002년 일본 첫 앨범으로 한국 가수 최초 오리콘 앨범 차트 1위! 일본레코드협회 &#x27;밀리언&#x27; 인증까지 받았어요.</li><li><b>4</b> 오늘 노래방 첫 곡은 &#x27;No.1&#x27; 어때요?</li><li><b>5</b> 생일 축하는 댓글로!</li></ol>
+        <p class="hook">릴스 첫 장면: “만 13살 데뷔, 오리콘 1위까지?”</p></details>
+      <div class="files"><span class="file off" title="images/2026-11-05-2/final/">카드 이미지 5장 · 드라이브 업로드 전</span><span class="file off" title="reels/2026-11-05-2.mp4">릴스 (음원 포함) · 드라이브 업로드 전</span><span class="file off" title="reels/2026-11-05-2_무음.mp4">릴스 (무음 · 인스타 음악용) · 드라이브 업로드 전</span></div>
+      <p class="music">🎵 인스타 음악: <b>&#x27;No.1&#x27; - 보아 (앱에서 검색해 붙임. 없으면 &#x27;Listen to My Heart&#x27;, 그래도 없으면 기본 음원 버전)</b></p>
+      <div class="grid">
+        <div>
+          <h3>카드뉴스</h3>
+          
+      <div class="copy">
+        <div class="copy-head"><span>카드뉴스 캡션</span><small>🎵 표기 없음</small>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>1986년 11월 5일, &#x27;아시아의 별&#x27; 보아가 태어났어요. 2000년 만 13세에 데뷔하고, 2002년에는 일본 첫 앨범으로 한국 가수 최초 오리콘 앨범 차트 1위에 올랐죠. 오늘 노래방에 간다면 첫 곡은 정해졌네요! 🎤
+
+On November 5, 1986, BoA was born, and in 2002 her first Japanese album, Listen to My Heart, became the first album by a Korean artist to top Japan&#x27;s Oricon Albums Chart.
+
+#옛날오늘 #오늘은무슨날 #오늘의역사 #카드뉴스 #OnThisDay #보아 #BoA #보아생일 #아시아의별 #케이팝</pre>
+      </div>
+          <ul class="check">
+            <li>card1~5 <b>순서대로</b> 선택 → 자르기 <b>4:5</b></li>
+            <li>고급 설정: <b>AI 레이블 켜기</b>, Facebook·Threads 공유 <b>끄기</b></li>
+          </ul>
+        </div>
+        <div>
+          <h3>릴스</h3>
+          
+      <div class="copy">
+        <div class="copy-head"><span>릴스 캡션 · 인스타 음악 사용 시</span><small>🎵 표기 없음</small>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>1986년 11월 5일, &#x27;아시아의 별&#x27; 보아가 태어났어요. 2000년 만 13세에 데뷔하고, 2002년에는 일본 첫 앨범으로 한국 가수 최초 오리콘 앨범 차트 1위에 올랐죠. 오늘 노래방에 간다면 첫 곡은 정해졌네요! 🎤
+
+On November 5, 1986, BoA was born, and in 2002 her first Japanese album, Listen to My Heart, became the first album by a Korean artist to top Japan&#x27;s Oricon Albums Chart.
+
+#옛날오늘 #오늘은무슨날 #오늘의역사 #카드뉴스 #OnThisDay #보아 #BoA #보아생일 #아시아의별 #케이팝</pre>
+      </div>
+      <div class="copy">
+        <div class="copy-head"><span>릴스 캡션 · 기본 음원</span><small>🎵 표기 포함</small>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>1986년 11월 5일, &#x27;아시아의 별&#x27; 보아가 태어났어요. 2000년 만 13세에 데뷔하고, 2002년에는 일본 첫 앨범으로 한국 가수 최초 오리콘 앨범 차트 1위에 올랐죠. 오늘 노래방에 간다면 첫 곡은 정해졌네요! 🎤
+
+On November 5, 1986, BoA was born, and in 2002 her first Japanese album, Listen to My Heart, became the first album by a Korean artist to top Japan&#x27;s Oricon Albums Chart.
+
+#옛날오늘 #오늘은무슨날 #오늘의역사 #카드뉴스 #OnThisDay #보아 #BoA #보아생일 #아시아의별 #케이팝
+
+🎵 &quot;Dance Monster&quot; - Kevin MacLeod (incompetech.com) / CC BY 4.0 creativecommons.org/licenses/by/4.0</pre>
+      </div>
+          <ul class="check">
+            <li><b>폰 앱</b>에서 무음 영상 → 음악 붙이기 → 곡이 없으면 음원 포함 버전</li>
+            <li>AI 레이블 켜기</li>
+          </ul>
+        </div>
+      </div>
+      <details class="alts"><summary>대체 텍스트 (카드 5장 + 릴스)</summary>
+        
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 전체</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>1. 무대 위 스탠드 마이크와 작은 생일 케이크, 별 모양 색종이가 있는 파스텔 일러스트. 제목은 &quot;만 13살 데뷔, 오늘의 생일자는?&quot;.
+2. 책상 위에 휴대용 CD 플레이어와 헤드폰이 놓여 있고 음표가 떠오르는 일러스트. 1986년 11월 5일 보아가 태어나 2000년 만 13세에 데뷔했다는 설명.
+3. 벚꽃잎이 흩날리는 작은 무대 위에 별 모양 트로피와 CD가 빛나는 일러스트. 2002년 일본 첫 앨범이 한국 가수 최초로 오리콘 앨범 차트 1위에 오르고 밀리언 인증을 받았다는 설명.
+4. 웃는 얼굴의 마이크 캐릭터와 탬버린 캐릭터가 알록달록한 노래방 조명 아래에서 신나게 노래하는 일러스트. &quot;오늘 노래방 첫 곡은 &#x27;No.1&#x27; 어때요?&quot;
+5. 1장과 같은 무대 마이크와 생일 케이크 일러스트에 &quot;생일 축하는 댓글로!&quot; 문구.</pre>
+      </div>
+        
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 1</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>무대 위 스탠드 마이크와 작은 생일 케이크, 별 모양 색종이가 있는 파스텔 일러스트. 제목은 &quot;만 13살 데뷔, 오늘의 생일자는?&quot;.</pre>
+      </div>
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 2</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>책상 위에 휴대용 CD 플레이어와 헤드폰이 놓여 있고 음표가 떠오르는 일러스트. 1986년 11월 5일 보아가 태어나 2000년 만 13세에 데뷔했다는 설명.</pre>
+      </div>
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 3</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>벚꽃잎이 흩날리는 작은 무대 위에 별 모양 트로피와 CD가 빛나는 일러스트. 2002년 일본 첫 앨범이 한국 가수 최초로 오리콘 앨범 차트 1위에 오르고 밀리언 인증을 받았다는 설명.</pre>
+      </div>
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 4</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>웃는 얼굴의 마이크 캐릭터와 탬버린 캐릭터가 알록달록한 노래방 조명 아래에서 신나게 노래하는 일러스트. &quot;오늘 노래방 첫 곡은 &#x27;No.1&#x27; 어때요?&quot;</pre>
+      </div>
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 5</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>1장과 같은 무대 마이크와 생일 케이크 일러스트에 &quot;생일 축하는 댓글로!&quot; 문구.</pre>
+      </div>
+        
+      <div class="copy">
+        <div class="copy-head"><span>릴스 대체 텍스트</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>옛날 오늘 릴스. 파스텔 일러스트 카드 5장이 차례로 넘어가는 영상, 첫 장면 문구는 &quot;만 13살 데뷔, 오리콘 1위까지?&quot;.</pre>
+      </div>
+      </details>
+    </section>
+    <section class="post done" id="2026-11-05-3">
+      <header>
+        <div class="badge">3번</div>
+        <div class="meta">
+          <h2><span class="yr">2004</span>일본어로 노래하는 첫 VOCALOID 제품 &#x27;MEIKO&#x27; 발매</h2>
+          <p>2026-11-05 21:30 KST (슬롯 4) · 발명 / 첫 출시</p>
+        </div>
+        <div class="status">✅ 게시 완료</div>
+      </header>
+      <div class="thumbs"><a href="img/2026-11-05-3/card1.jpg" target="_blank" class="th"><img src="img/2026-11-05-3/card1.jpg" alt="" loading="lazy"><span>1</span></a><a href="img/2026-11-05-3/card2.jpg" target="_blank" class="th"><img src="img/2026-11-05-3/card2.jpg" alt="" loading="lazy"><span>2</span></a><a href="img/2026-11-05-3/card3.jpg" target="_blank" class="th"><img src="img/2026-11-05-3/card3.jpg" alt="" loading="lazy"><span>3</span></a><a href="img/2026-11-05-3/card4.jpg" target="_blank" class="th"><img src="img/2026-11-05-3/card4.jpg" alt="" loading="lazy"><span>4</span></a><a href="img/2026-11-05-3/card5.jpg" target="_blank" class="th"><img src="img/2026-11-05-3/card5.jpg" alt="" loading="lazy"><span>5</span></a><a href="img/2026-11-05-3/reel.jpg" target="_blank" class="th reel"><img src="img/2026-11-05-3/reel.jpg" alt="" loading="lazy"><span>릴스</span></a></div>
+      <details class="cards"><summary>주제·카드 문구 보기</summary><p class="topic">2004년 11월 5일, 일본어로 노래하는 첫 VOCALOID 제품 &#x27;MEIKO&#x27; 발매 (크립톤 퓨처 미디어, 야마하 VOCALOID 기술)</p><ol><li><b>1</b> 일본어 보컬로이드 1호는?</li><li><b>2</b> 2004년 11월 5일, 일본어로 노래하는 첫 보컬로이드 &#x27;MEIKO&#x27;가 나왔어요. 가사와 멜로디를 입력하면 컴퓨터가 노래를 불러 줬죠.</li><li><b>3</b> MEIKO는 상자에 캐릭터 그림을 넣은 첫 보컬로이드였어요. 그로부터 3년 뒤인 2007년, 같은 회사에서 &#x27;하츠네 미쿠&#x27;가 나왔답니다.</li><li><b>4</b> 오늘 노래는 컴퓨터한테 맡겨 볼까?</li><li><b>5</b> 내일도 보려면 저장!</li></ol>
+        <p class="hook">릴스 첫 장면: “일본어로 노래하는 첫 보컬로이드가 나온 날”</p></details>
+      <div class="files"><span class="file off" title="images/2026-11-05-3/final/">카드 이미지 5장 · 드라이브 업로드 전</span><span class="file off" title="reels/2026-11-05-3.mp4">릴스 (음원 포함) · 드라이브 업로드 전</span><span class="file off" title="reels/2026-11-05-3_무음.mp4">릴스 (무음 · 인스타 음악용) · 드라이브 업로드 전</span></div>
+      <p class="music">🎵 인스타 음악: <b>앱에서 &#x27;MEIKO&#x27; 검색 → MEIKO가 부른 곡 (없으면 기본 음원 버전)</b></p>
+      <div class="grid">
+        <div>
+          <h3>카드뉴스</h3>
+          
+      <div class="copy">
+        <div class="copy-head"><span>카드뉴스 캡션</span><small>🎵 표기 없음</small>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>2004년 11월 5일, 일본어로 노래하는 첫 보컬로이드 &#x27;MEIKO&#x27;가 세상에 나왔어요. 가사와 멜로디만 입력하면 컴퓨터가 노래를 불러 주는 가상 가수였죠. 3년 뒤 같은 회사에서 나온 &#x27;하츠네 미쿠&#x27;까지, 일본어 보컬로이드 이야기는 오늘 시작됐답니다. 🎶
+
+On November 5, 2004, MEIKO was released as the first VOCALOID able to sing in Japanese.
+
+#옛날오늘 #오늘은무슨날 #오늘의역사 #카드뉴스 #OnThisDay #보컬로이드 #MEIKO #VOCALOID #가상가수 #음성합성</pre>
+      </div>
+          <ul class="check">
+            <li>card1~5 <b>순서대로</b> 선택 → 자르기 <b>4:5</b></li>
+            <li>고급 설정: <b>AI 레이블 켜기</b>, Facebook·Threads 공유 <b>끄기</b></li>
+          </ul>
+        </div>
+        <div>
+          <h3>릴스</h3>
+          
+      <div class="copy">
+        <div class="copy-head"><span>릴스 캡션 · 인스타 음악 사용 시</span><small>🎵 표기 없음</small>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>2004년 11월 5일, 일본어로 노래하는 첫 보컬로이드 &#x27;MEIKO&#x27;가 세상에 나왔어요. 가사와 멜로디만 입력하면 컴퓨터가 노래를 불러 주는 가상 가수였죠. 3년 뒤 같은 회사에서 나온 &#x27;하츠네 미쿠&#x27;까지, 일본어 보컬로이드 이야기는 오늘 시작됐답니다. 🎶
+
+On November 5, 2004, MEIKO was released as the first VOCALOID able to sing in Japanese.
+
+#옛날오늘 #오늘은무슨날 #오늘의역사 #카드뉴스 #OnThisDay #보컬로이드 #MEIKO #VOCALOID #가상가수 #음성합성</pre>
+      </div>
+      <div class="copy">
+        <div class="copy-head"><span>릴스 캡션 · 기본 음원</span><small>🎵 표기 포함</small>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>2004년 11월 5일, 일본어로 노래하는 첫 보컬로이드 &#x27;MEIKO&#x27;가 세상에 나왔어요. 가사와 멜로디만 입력하면 컴퓨터가 노래를 불러 주는 가상 가수였죠. 3년 뒤 같은 회사에서 나온 &#x27;하츠네 미쿠&#x27;까지, 일본어 보컬로이드 이야기는 오늘 시작됐답니다. 🎶
+
+On November 5, 2004, MEIKO was released as the first VOCALOID able to sing in Japanese.
+
+#옛날오늘 #오늘은무슨날 #오늘의역사 #카드뉴스 #OnThisDay #보컬로이드 #MEIKO #VOCALOID #가상가수 #음성합성
+
+🎵 &quot;Pixelland&quot; - Kevin MacLeod (incompetech.com) / CC BY 4.0 creativecommons.org/licenses/by/4.0</pre>
+      </div>
+          <ul class="check">
+            <li><b>폰 앱</b>에서 무음 영상 → 음악 붙이기 → 곡이 없으면 음원 포함 버전</li>
+            <li>AI 레이블 켜기</li>
+          </ul>
+        </div>
+      </div>
+      <details class="alts"><summary>대체 텍스트 (카드 5장 + 릴스)</summary>
+        
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 전체</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>1. 2000년대 스타일의 둥근 데스크톱 컴퓨터 스피커에서 음표가 쏟아져 나오는 파스텔 일러스트. 제목은 &quot;일본어 보컬로이드 1호는?&quot;.
+2. 컴퓨터 화면에 알록달록한 막대 모양 음표가 줄지어 있고 스피커에서 음표가 흘러나오는 일러스트. 2004년 11월 5일 일본어로 노래하는 첫 보컬로이드 MEIKO가 나왔다는 설명.
+3. 책상 위 소프트웨어 상자 앞면에 웃는 마이크 그림이 있고 주변에 반짝이와 음표가 있는 일러스트. MEIKO가 상자에 캐릭터 그림을 넣은 첫 보컬로이드였고 3년 뒤인 2007년 같은 회사에서 하츠네 미쿠가 나왔다는 설명.
+4. 헤드폰을 쓴 웃는 얼굴의 노트북 캐릭터가 마이크 앞에서 노래하고 음표가 떠다니는 일러스트. &quot;오늘 노래는 컴퓨터한테 맡겨 볼까?&quot;
+5. 1장과 같은 레트로 컴퓨터와 음표 일러스트에 &quot;내일도 보려면 저장!&quot; 문구.</pre>
+      </div>
+        
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 1</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>2000년대 스타일의 둥근 데스크톱 컴퓨터 스피커에서 음표가 쏟아져 나오는 파스텔 일러스트. 제목은 &quot;일본어 보컬로이드 1호는?&quot;.</pre>
+      </div>
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 2</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>컴퓨터 화면에 알록달록한 막대 모양 음표가 줄지어 있고 스피커에서 음표가 흘러나오는 일러스트. 2004년 11월 5일 일본어로 노래하는 첫 보컬로이드 MEIKO가 나왔다는 설명.</pre>
+      </div>
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 3</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>책상 위 소프트웨어 상자 앞면에 웃는 마이크 그림이 있고 주변에 반짝이와 음표가 있는 일러스트. MEIKO가 상자에 캐릭터 그림을 넣은 첫 보컬로이드였고 3년 뒤인 2007년 같은 회사에서 하츠네 미쿠가 나왔다는 설명.</pre>
+      </div>
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 4</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>헤드폰을 쓴 웃는 얼굴의 노트북 캐릭터가 마이크 앞에서 노래하고 음표가 떠다니는 일러스트. &quot;오늘 노래는 컴퓨터한테 맡겨 볼까?&quot;</pre>
+      </div>
+      <div class="copy">
+        <div class="copy-head"><span>대체 텍스트 5</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>1장과 같은 레트로 컴퓨터와 음표 일러스트에 &quot;내일도 보려면 저장!&quot; 문구.</pre>
+      </div>
+        
+      <div class="copy">
+        <div class="copy-head"><span>릴스 대체 텍스트</span>
+          <button type="button" class="btn-copy">복사</button></div>
+        <pre>옛날 오늘 릴스. 파스텔 일러스트 카드 5장이 차례로 넘어가는 영상, 첫 장면 문구는 &quot;일본어로 노래하는 첫 보컬로이드가 나온 날&quot;.</pre>
+      </div>
+      </details>
+    </section></div>
+  <p class="foot">마지막 갱신 2026-11-05 18:17 KST · 작업용 페이지 (검색 노출 안 함)</p>
+</div><script>
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
+  document.querySelectorAll('.tab,.day').forEach(e=>e.classList.remove('on'));
+  t.classList.add('on');document.getElementById(t.dataset.day).classList.add('on');
+  try{localStorage.setItem('day',t.dataset.day)}catch(e){}
+}));
+try{const d=localStorage.getItem('day');const t=d&&document.querySelector('.tab[data-day="'+d+'"]');if(t)t.click()}catch(e){}
+document.querySelectorAll('.btn-copy').forEach(b=>b.addEventListener('click',async()=>{
+  const text=b.closest('.copy').querySelector('pre').innerText;
+  try{await navigator.clipboard.writeText(text)}catch(e){
+    const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove()}
+  b.textContent='복사됨';b.classList.add('ok');setTimeout(()=>{b.textContent='복사';b.classList.remove('ok')},1500);
+}));
+</script></body></html>
