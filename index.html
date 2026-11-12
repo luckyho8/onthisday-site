@@ -221,6 +221,11 @@ On Nov 12, 1980, Voyager 1 flew past Saturn — and on Nov 18, 2026, it becomes 
 <td>–</td>
 </tr>
 <tr>
+<td><code>scripts/make_video.py</code></td>
+<td><strong>한 명령 제작</strong>: 만들기 → check → 미리보기 → 렌더 → 측정 → 번호 프레임 모음 → 자동 검수표 / 게시 준비</td>
+<td>–</td>
+</tr>
+<tr>
 <td><code>scripts/motion_measure.py</code></td>
 <td>영상의 "움직임 문법" 측정: 멈춤%, 변화 간격, 움직임 양, 대표 색</td>
 <td>–</td>
@@ -321,7 +326,7 @@ On Nov 12, 1980, Voyager 1 flew past Saturn — and on Nov 18, 2026, it becomes 
 </table>
 <h2>6. 더 다듬을 것 (제작 과정)</h2>
 <ol>
-<li><strong>한 명령으로 제작</strong>: 지금은 build → check → snapshot → render → 측정 → 프레임 모음을 따로 돌린다. <code>make</code> 한 번으로 묶고, 결과 표를 자동으로 만든다.</li>
+<li>~~한 명령으로 제작~~ → <strong>됐다 (2026-11-12)</strong>: <code>scripts/make_video.py &lt;키&gt;</code> → <code>--render</code> → <code>--publish</code>. 스킬 <code>make-video</code>가 계획부터 게시까지 순서를 잡는다.</li>
 <li><strong>렌더 전 미리보기(애니매틱)</strong>: 스냅샷 몇 장으로 장면 흐름을 먼저 보여 주면 렌더(몇 분) 전에 방향을 고칠 수 있다.</li>
 <li><strong>부품 창고 키우기</strong>: 컨셉 2호의 그림 부품(전광판·스크린·지도·금고)처럼 주제 종류별 부품을 늘린다. 부품이 많을수록 새 영상이 빨라진다.</li>
 <li><strong>컨셉 3호</strong>: 차분하거나 진지한 과학 주제용 (느린 일렉트로닉 또는 로파이). 음원이 더 필요하다.</li>
