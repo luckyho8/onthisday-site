@@ -266,7 +266,8 @@ On Nov 12, 1980, Voyager 1 flew past Saturn — and on Nov 18, 2026, it becomes 
 <li><code>critique</code>: 런칭 영상 7편 기준으로 점수와 고칠 곳을 준다.</li>
 <li><code>measure</code>: 음량과 박자를 잰다.</li>
 <li>한계: 취향(듣기 좋은가)은 판단하지 못한다. 처음 쓸 때 모델 약 1.1GB를 받는다. 검증은 한 사람이 작게 한 것뿐이다.</li>
-<li>할 일: 지금 효과음과 Earshot 효과음을 <strong>A/B로 들어 보고</strong> 더 나으면 쓴다 (아직 설치 안 함).</li>
+<li>2026-11-12: <code>E:/onthisday_tools/earshot</code>에 따로 설치했다 (CPU, 분석 모델은 받지 않음 — 효과음 합성에는 필요 없다).</li>
+<li>11-13 영상으로 A/B를 만들었다: A=우리 코딩 합성음, B=Earshot 은행 소리(pro_click/soft, ui_pop/soft, cut_hit/kick, mallet/glock). 같은 박자 표, 같은 음악, 소리마다 크기를 맞췄다. 파일은 <code>reels/_작업/효과음비교_*.mp4</code>, <code>효과음만_A다음B.wav</code>. → <strong>사용자 평가: B(Earshot)가 조금 낫다, 큰 차이는 아님.</strong> 2026-11-12부터 <code>scripts/earshot_bank.py</code>로 은행 소리를 뽑아 두고 기본으로 쓴다.</li>
 <li>더 찾아보기: github.com/Leonxlnx/earshot</li>
 </ul>
 <h2>4. 유튜브·인스타 영상을 분석하는 법</h2>
